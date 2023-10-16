@@ -16,6 +16,7 @@ export const register = async (req: Request, res: Response) => {
         }
         res.status(201)
         res.json( {id:newUser.id})
+        return
     }
 
     res.json({ error: 'E-mail e/ou senha não enviados.' });
